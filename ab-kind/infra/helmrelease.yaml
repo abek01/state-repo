@@ -7,7 +7,7 @@ spec:
   interval: 1m
   valuesFrom:
   - kind: ConfigMap
-    name: sample-node-valuse
+    name: sample-node-values
   chart:
     spec:
       chart: node

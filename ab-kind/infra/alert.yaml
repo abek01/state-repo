@@ -3,6 +3,7 @@ apiVersion: notification.toolkit.fluxcd.io/v1beta1
 kind: Alert
 metadata:
   name: sample-node-alert
+  namespace: ab
 spec:
   summary: ab-kind
   providerRef:

@@ -15,4 +15,5 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: noderepo
+        namespace: repo
       interval: 1m

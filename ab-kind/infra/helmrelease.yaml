@@ -3,11 +3,12 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: sample-node
+  namespace: ab
 spec:
   interval: 1m
   valuesFrom:
   - kind: ConfigMap
-    name: sample-node-config
+    name: sample-node-valuse
   chart:
     spec:
       chart: node

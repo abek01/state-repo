@@ -1,0 +1,10 @@
+---
+apiVersion: notification.toolkit.fluxcd.io/v1beta1
+kind: Provider
+metadata:
+  name: notification-sample-node
+  namespace: ab
+spec:
+  type: generic
+  # webhook address (ignored if secretRef is specified)
+  address: http://notif-handler.default.svc.cluster.local
